@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+
+    <!--=============== FONTAWESOME ICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <img src="images/sun.png" alt="" id="icon">
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="title">
+                    <p><span id="typing"></span></p>
+                    <h1> I'm <span>Emmanuel </span> based in Lagos State, Nigeria</h1>
+                </div>
+                <div class="my-photo">
+                    <img src="Images/about_img2.jpg" alt="MyPhoto">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!---------about------->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about_img.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Ejoga Emmanuel, a passionate Junior
+                    Full-Stack Web Developer with a love for building dynamic
+                    and user-friendly web applications. My journey into coding
+                    started with a curiosity for how websites work, which
+                    quickly turned into a full-fledged passion for crafting
+                    clean, efficient, and scalable solutions. With experience in
+                    React, Next.js, Node.js, MySQL and PostgreSQL, I specialize
+                    in developing both the frontend and backend of web
+                    applications. Whether it's creating beautiful, responsive
+                    user interfaces or designing robust APIs, I enjoy solving
+                    real-world problems through code. I’m constantly learning
+                    and staying updated with the latest web technologies to
+                    improve my skills and create even better digital
+                    experiences. When I'm not coding, you’ll probably find me
+                    exploring new tech trends, contributing to open-source
+                    projects, or working on my next side project.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end and Back-end development Skills</span><br>Creating and developing user interfaces using HTML,CSS, JavaScript, React JS Next JS. understanding of serverside programming languages such as Node.js, Postgres, MySQL. Version Control: Git & Github. Basic DevOps: Verce. I am currently an online student of African Power Learn Project {PLP} studying Full-Stack Python programming Language.</li>
+                            <li><span>Web Application</span><br> Strong understanding of web application architecture,including client-side and server-side architecture.</li>
+                            <li><span>Problem Solving</span><br>Able to analyze problems and find efficient solution.</li>
+                            <li><span>Soft skills</span><br>I have good communication and collaboration skills.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025</span><br>E-Commerce DashBoard Project</li>
+                            <li><span></span><br>Honey Treat Trade Academy Lagos State</li>
+                            <li><span>2022 -2024</span><br>Network Trans. Implement. Tech. MainOne Cable Company' Lagos State</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2024</span><br> B.Eng. Mechanical Engineering, Joseph Sarwuan Tarka University, Makurdi Benue State</li>
+                            <li><span>2024 -2025</span><br>Software Engineering, ( Full-Stack Website Developer) Honey Treat Trade Academy, Lagos</li>
+                            <li><span>2025</span><br>Software Engineering (python Programming Language) African Power Learn Project Nairobi Kenya (online)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Services-------->
+    <div class="section" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>
+                      <ul>
+                        <li>Developing the front-end of a web application.(creating user interface,designing the layout   and implementing user interactions using HTML,CSS and JavaScript)</li>
+                        <li>Developing the back-end of a web application.This involves setting up the server,creating the database schema and implementing languages such as Python, Node.js and React.js.</li> 
+                      </ul>
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Other</h2>
+                    <p><ul><li>Help business and organization build high-quality web applications.</li>
+                    <li>Building APIs(Application Programming interfaces) allowing different application to communicate with each other,Building an API that can be used by other applications to acces data or functionality of the application.</li></ul></p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------Portfolio----------->
+    <div class="section" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App connects you  to focused individuals around the globe.
+                            Download it at playstore.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App connects you  to focused individuals around the globe.
+                            Download it at playstore.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App connects you  to focused individuals around the globe.
+                            Download it at playstore.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------Contact-------->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ejogaemmanuel62@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+23408077937086, 09137330820</p> 
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/https://www.facebook.com/profile.php?id=100086782116855" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/@princeejoga" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/princeemmy748" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/emmanuel-ejoga-505011247" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <a href="Images/CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="04d3b07e-ea33-4505-8ae3-792147bb8667">
+
+                        <input type="text" name="Name" placeholder="Your Name required">
+                        <input type="email" name="Email" placeholder="Your Email required">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa fa-copyright"></i> 2024. Made by Ejoga Emmanuel</p>
+        </div>
+    </div>
+    <button id="return-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    // const scriptURL = 'https://script.google.com/macros/s/AKfycbyskNhzq_GWCARJo2wHUkc1epni7KfXpBoAM7ydsktwGMnUJjBXKPX9YONRo5g9WMO-5g/exec'
+    // const form = document.forms['submit-to-google-sheet']
+    // const msg = document.getElementById("msg")
+
+    // form.addEventListener('submit', e => {
+    //   e.preventDefault()
+    //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    //     .then(response => 
+    //     {
+    //         msg.innerHTML = "Message sent successfully"
+    //         setTimeout(function(){
+    //             msg.innerHTML = ""
+    //         }, 5000)
+    //         form.reset()
+    //     })
+    //     .catch(error => console.error('Error!', error.message))
+    // })
+    var icon = document.getElementById("icon")
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme")
+        if (document.body.classList.contains("light-theme")) {
+            icon.src = "images/moon.png"
+        } else {
+            icon.src = "images/sun.png"
+        }
+    }
+    // portfolio.js
+    const logo = document.getElementById("logo");
+    const themeIcon = document.getElementById("icon");
+
+
+document.getElementById("return-to-top").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const button = document.getElementById("return-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// const texts = ["Web Developer", "UI/UX Designer", "Graphics Designer"];
+// let count = 0;
+// let index = 0;
+// let currentText = "";
+// let letter = "";
+
+// (function type() {
+//     if (count === texts.length) {
+//         count = 0;
+//     }
+//     currentText = texts[count];
+//     letter = currentText.slice(0, ++index);
+
+//     document.getElementById("typing").textContent = letter;
+//     if (letter.length === currentText.length) {
+//         count++;
+//         index = 0;
+//         setTimeout(type, 2000); // Pause before typing the next text
+//     } else {
+//         setTimeout(type, 150);
+//     }
+// })();
+
+// Return to Top Button Script
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const button = document.getElementById("return-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+document.getElementById("return-to-top").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const button = document.getElementById("return-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+document.getElementById("return-to-top").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+    </script>
+</body>
+</html>
