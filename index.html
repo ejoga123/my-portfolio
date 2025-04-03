@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio Website</title>
+    <title> Hackathon Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <!--=============== FAVICON ===============-->
+     <!-- FAVICON  -->
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
 
-    <!--=============== FONTAWESOME ICONS ===============-->
+     <!-- FONTAWESOME ICONS  -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="header">
         <div class="container">
+
+            <!-- navbar starts here-->
+
             <nav>
                 <img src="Images/logo.png" id="logo">
                 <ul id="sidemenu">
@@ -28,18 +32,20 @@
                 <img src="images/sun.png" alt="" id="icon">
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+
+            <!-- navbar ends here -->
+
+            <!-- introduction section start here -->
             <div class="header-text">
                 <div class="title">
-                    <!-- <p><span id="typing"></span></p> -->
                     <h1> I'm <span>Emmanuel </span> based in Lagos State, Nigeria</h1>
-                </div>
-                <!-- <div class="my-photo">
-                    <img src="Images/about_img2.jpg" alt="MyPhoto"> -->
-                </div>
             </div>
+            <!-- introduction section ends here -->
         </div>
     </div> 
-    <!---------about------->
+
+    <!-- about section start here -->
+
     <div class="section" id="about">
         <div class="container">
             <div class="row">
@@ -70,6 +76,10 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
+                    <!-- about section ends here -->
+
+                     <!-- skills section starts here -->
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Front-end and Back-end development Skills</span><br>Creating and developing user interfaces using HTML,CSS, JavaScript, React JS Next JS. understanding of serverside programming languages such as Node.js, Postgres, MySQL. Version Control: Git & Github. Basic DevOps: Verce. I am currently an online student of African Power Learn Project {PLP} studying Full-Stack Python programming Language.</li>
@@ -78,6 +88,10 @@
                             <li><span>Soft skills</span><br>I have good communication and collaboration skills.</li>
                         </ul>
                     </div>
+                     <!-- skills section ends here -->
+
+                      <!-- experience and education start here -->
+                       
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2025</span><br>E-Commerce DashBoard Project</li>
@@ -89,13 +103,15 @@
                         <ul>
                             <li><span>2018 - 2024</span><br> B.Eng. Mechanical Engineering, Joseph Sarwuan Tarka University, Makurdi Benue State</li>
                             <li><span>2024 -2025</span><br>Software Engineering, ( Full-Stack Website Developer) Honey Treat Trade Academy, Lagos</li>
-                            <li><span>2025</span><br>Software Engineering (python Programming Language) African P
+                            <li><span>2025 Till date</span><br>Software Engineering (python Programming Language) African Power Learn Project, Nairo Kenya (Online)
                     </div>
+                    <!-- experience and education end here -->
                 </div>
             </div>
         </div>
     </div>
-    <!---------Services-------->
+       <!-- Services section starts here -->
+
     <div class="section" id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -116,10 +132,11 @@
                     <li>Building APIs(Application Programming interfaces) allowing different application to communicate with each other,Building an API that can be used by other applications to acces data or functionality of the application.</li></ul></p>
                     <a href="#">learn more</a>
                 </div>
+                <!-- Services section ends here -->
             </div>
         </div>
     </div>
-    <!--------Portfolio----------->
+     <!-- Portfolio section stats here -->
     <div class="section" id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
@@ -158,7 +175,9 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <!----------Contact-------->
+     <!-- Portfolio section ends here -->
+
+     <!-- Contact section starts here -->
     <div class="section" id="contact">
         <div class="container">
             <div class="row">
@@ -196,11 +215,17 @@
                 </div>
             </div>
         </div>
+        <!-- Contact section ends here -->
+
+        <!-- footer section starts here -->
         <div class="copyright">
             <p><i class="fa fa-copyright"></i> 2024. Made by Ejoga Emmanuel</p>
         </div>
+        <!-- footer section ends here -->
     </div>
     <button id="return-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- to make this website interactive here are JavaScript codes -->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -223,23 +248,7 @@
     function closemenu(){
         sidemeu.style.right = "-200px";
     }
-    // const scriptURL = 'https://script.google.com/macros/s/AKfycbyskNhzq_GWCARJo2wHUkc1epni7KfXpBoAM7ydsktwGMnUJjBXKPX9YONRo5g9WMO-5g/exec'
-    // const form = document.forms['submit-to-google-sheet']
-    // const msg = document.getElementById("msg")
-
-    // form.addEventListener('submit', e => {
-    //   e.preventDefault()
-    //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    //     .then(response => 
-    //     {
-    //         msg.innerHTML = "Message sent successfully"
-    //         setTimeout(function(){
-    //             msg.innerHTML = ""
-    //         }, 5000)
-    //         form.reset()
-    //     })
-    //     .catch(error => console.error('Error!', error.message))
-    // })
+    
     var icon = document.getElementById("icon")
     icon.onclick = function(){
         document.body.classList.toggle("light-theme")
@@ -274,28 +283,6 @@ function scrollFunction() {
     }
 }
 
-// const texts = ["Web Developer", "UI/UX Designer", "Graphics Designer"];
-// let count = 0;
-// let index = 0;
-// let currentText = "";
-// let letter = "";
-
-// (function type() {
-//     if (count === texts.length) {
-//         count = 0;
-//     }
-//     currentText = texts[count];
-//     letter = currentText.slice(0, ++index);
-
-//     document.getElementById("typing").textContent = letter;
-//     if (letter.length === currentText.length) {
-//         count++;
-//         index = 0;
-//         setTimeout(type, 2000); // Pause before typing the next text
-//     } else {
-//         setTimeout(type, 150);
-//     }
-// })();
 
 // Return to Top Button Script
 window.onscroll = function() {
